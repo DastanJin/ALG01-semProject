@@ -1,0 +1,91 @@
+\begin{theindex}
+
+  \item {\texorpdfstring{$\sim$}{\string~}Map}
+    \subitem {Map}, \hyperpage{5}
+  \item {\texorpdfstring{$\sim$}{\string~}Point}
+    \subitem {Point}, \hyperpage{7}
+
+  \indexspace
+
+  \item {AddPoint}
+    \subitem {Map}, \hyperpage{6}
+  \item {AddPrevious}
+    \subitem {Point}, \hyperpage{7}
+  \item {ALG01-\/semProject.cpp}, \hyperpage{9}
+    \subitem {main}, \hyperpage{9}
+
+  \indexspace
+
+  \item {CalculatePath}
+    \subitem {Map}, \hyperpage{6}
+
+  \indexspace
+
+  \item {GetDistance}
+    \subitem {Point}, \hyperpage{7}
+  \item {GetFinish}
+    \subitem {Map}, \hyperpage{6}
+  \item {GetLevel}
+    \subitem {Point}, \hyperpage{7}
+  \item {GetPath}
+    \subitem {Map}, \hyperpage{6}
+  \item {GetPoint}
+    \subitem {Map}, \hyperpage{6}
+  \item {GetPrevious}
+    \subitem {Point}, \hyperpage{7}
+  \item {GetStart}
+    \subitem {Map}, \hyperpage{6}
+  \item {GetX}
+    \subitem {Point}, \hyperpage{8}
+  \item {GetY}
+    \subitem {Point}, \hyperpage{8}
+
+  \indexspace
+
+  \item {LoadFromFile}
+    \subitem {Map}, \hyperpage{6}
+
+  \indexspace
+
+  \item {main}
+    \subitem {ALG01-\/semProject.cpp}, \hyperpage{9}
+  \item {Map}, \hyperpage{5}
+    \subitem {\texorpdfstring{$\sim$}{\string~}Map}, \hyperpage{5}
+    \subitem {AddPoint}, \hyperpage{6}
+    \subitem {CalculatePath}, \hyperpage{6}
+    \subitem {GetFinish}, \hyperpage{6}
+    \subitem {GetPath}, \hyperpage{6}
+    \subitem {GetPoint}, \hyperpage{6}
+    \subitem {GetStart}, \hyperpage{6}
+    \subitem {LoadFromFile}, \hyperpage{6}
+    \subitem {Map}, \hyperpage{5}
+    \subitem {PrintMap}, \hyperpage{6}
+  \item {Map.cpp}, \hyperpage{9}
+  \item {Map.h}, \hyperpage{9}
+
+  \indexspace
+
+  \item {Point}, \hyperpage{7}
+    \subitem {\texorpdfstring{$\sim$}{\string~}Point}, \hyperpage{7}
+    \subitem {AddPrevious}, \hyperpage{7}
+    \subitem {GetDistance}, \hyperpage{7}
+    \subitem {GetLevel}, \hyperpage{7}
+    \subitem {GetPrevious}, \hyperpage{7}
+    \subitem {GetX}, \hyperpage{8}
+    \subitem {GetY}, \hyperpage{8}
+    \subitem {Point}, \hyperpage{7}
+    \subitem {PrintLevel}, \hyperpage{8}
+    \subitem {SetDistance}, \hyperpage{8}
+  \item {Point.cpp}, \hyperpage{10}
+  \item {Point.h}, \hyperpage{10}
+  \item {PrintLevel}
+    \subitem {Point}, \hyperpage{8}
+  \item {PrintMap}
+    \subitem {Map}, \hyperpage{6}
+
+  \indexspace
+
+  \item {SetDistance}
+    \subitem {Point}, \hyperpage{8}
+
+\end{theindex}

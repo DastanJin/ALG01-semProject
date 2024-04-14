@@ -2,7 +2,6 @@
 #include <fstream>
 #include <string>
 #include "Map.h"
-
 static void PrintResult(std::vector<Point*> path) {
   if (path.empty())
   {
