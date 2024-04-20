@@ -2,6 +2,10 @@
 #include <fstream>
 #include <string>
 #include "Map.h"
+/// <summary>
+/// Function for printing path result
+/// </summary>
+/// <param name="path"></param>
 static void PrintResult(std::vector<Point*> path) {
   if (path.empty())
   {
@@ -16,7 +20,10 @@ static void PrintResult(std::vector<Point*> path) {
     std::cout << "Total path length: " << path.back()->GetDistance() << std::endl;
   }
 }
-
+/// <summary>
+/// Solution for shortest-path find
+/// </summary>
+/// <returns></returns>
 int main()
 {
   Map* map = Map::LoadFromFile("input.txt");

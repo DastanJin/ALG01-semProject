@@ -2,32 +2,40 @@
 \hypertarget{class_point}{}\label{class_point}\index{Point@{Point}}
 
 
+\doxylink{class_point}{Point} class which is composite for \doxylink{class_map}{Map} \doxylink{class_point}{Point} represents single place in map.  
+
+
+
+
 {\ttfamily \#include $<$Point.\+h$>$}
 
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_point_a39be903b40fda788c0f5b83fd8397207}{Point}} (int x, int y, char level)
-\item 
+\begin{DoxyCompactList}\small\item\em Creates nnew point. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_point_a395fa04b4ec126b66fc053f829a30cc1}{\texorpdfstring{$\sim$}{\string~}\+Point}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Destroys actual point and its refferences. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_point_a56ef488d55611d823a35eb1655f1de7a}{GetX}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Getter for x directory. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_point_aa42c18de4df078af493363a423fd9580}{GetY}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Getter for y directory. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_point_aa403d0294190a329fa9d4578c6410f58}{Get\+Distance}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Getter for distance. \end{DoxyCompactList}\item 
 char \mbox{\hyperlink{class_point_a7736239ee4a2317529df134df2d28a4a}{Get\+Level}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Getter for level replacing start with \textquotesingle{}a\textquotesingle{} value and end with \textquotesingle{}z\textquotesingle{}. \end{DoxyCompactList}\item 
 char \mbox{\hyperlink{class_point_a64bbaf11d4123bed35b7bb4b49d4995a}{Print\+Level}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Getter for level with real char value from map. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_point_ad9ba2369f6a47ecad6c7d06c9385698a}{Set\+Distance}} (int distance)
-\item 
+\begin{DoxyCompactList}\small\item\em Setter for distance. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_point_a291ffcf9603e8c5e23f31fc86f56eedf}{Add\+Previous}} (\mbox{\hyperlink{class_point}{Point}} \texorpdfstring{$\ast$}{*}point)
-\item 
+\begin{DoxyCompactList}\small\item\em Method for adding refference to previous \doxylink{class_point}{Point}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_point}{Point}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_point_ac2a9a76568604a791cde5396d1694a80}{Get\+Previous}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Getter for actual stored previous \doxylink{class_point}{Point}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+\doxylink{class_point}{Point} class which is composite for \doxylink{class_map}{Map} \doxylink{class_point}{Point} represents single place in map. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{class_point_a39be903b40fda788c0f5b83fd8397207}\label{class_point_a39be903b40fda788c0f5b83fd8397207} 
@@ -36,11 +44,24 @@ void \mbox{\hyperlink{class_point_a291ffcf9603e8c5e23f31fc86f56eedf}{Add\+Previo
 \doxysubsubsection{\texorpdfstring{Point()}{Point()}}
 {\footnotesize\ttfamily Point\+::\+Point (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{char}]{level }\end{DoxyParamCaption})}
 
+
+
+Creates nnew point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_point_a395fa04b4ec126b66fc053f829a30cc1}\label{class_point_a395fa04b4ec126b66fc053f829a30cc1} 
 \index{Point@{Point}!````~Point@{\texorpdfstring{$\sim$}{\string~}Point}}
 \index{````~Point@{\texorpdfstring{$\sim$}{\string~}Point}!Point@{Point}}
 \doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Point()}{\string~Point()}}
 {\footnotesize\ttfamily Point\+::\texorpdfstring{$\sim$}{\string~}\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys actual point and its refferences. 
 
 
 
@@ -51,48 +72,108 @@ void \mbox{\hyperlink{class_point_a291ffcf9603e8c5e23f31fc86f56eedf}{Add\+Previo
 \doxysubsubsection{\texorpdfstring{AddPrevious()}{AddPrevious()}}
 {\footnotesize\ttfamily void Point\+::\+Add\+Previous (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}} \texorpdfstring{$\ast$}{*}}]{point }\end{DoxyParamCaption})}
 
+
+
+Method for adding refference to previous \doxylink{class_point}{Point}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & \\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_point_aa403d0294190a329fa9d4578c6410f58}\label{class_point_aa403d0294190a329fa9d4578c6410f58} 
 \index{Point@{Point}!GetDistance@{GetDistance}}
 \index{GetDistance@{GetDistance}!Point@{Point}}
 \doxysubsubsection{\texorpdfstring{GetDistance()}{GetDistance()}}
 {\footnotesize\ttfamily int Point\+::\+Get\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Getter for distance. 
+
+\begin{DoxyReturn}{Returns}
+distance as integer
+\end{DoxyReturn}
 \Hypertarget{class_point_a7736239ee4a2317529df134df2d28a4a}\label{class_point_a7736239ee4a2317529df134df2d28a4a} 
 \index{Point@{Point}!GetLevel@{GetLevel}}
 \index{GetLevel@{GetLevel}!Point@{Point}}
 \doxysubsubsection{\texorpdfstring{GetLevel()}{GetLevel()}}
 {\footnotesize\ttfamily char Point\+::\+Get\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Getter for level replacing start with \textquotesingle{}a\textquotesingle{} value and end with \textquotesingle{}z\textquotesingle{}. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
 \Hypertarget{class_point_ac2a9a76568604a791cde5396d1694a80}\label{class_point_ac2a9a76568604a791cde5396d1694a80} 
 \index{Point@{Point}!GetPrevious@{GetPrevious}}
 \index{GetPrevious@{GetPrevious}!Point@{Point}}
 \doxysubsubsection{\texorpdfstring{GetPrevious()}{GetPrevious()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} \texorpdfstring{$\ast$}{*} Point\+::\+Get\+Previous (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Getter for actual stored previous \doxylink{class_point}{Point}. 
+
+\begin{DoxyReturn}{Returns}
+pointer to previous \doxylink{class_point}{Point}
+\end{DoxyReturn}
 \Hypertarget{class_point_a56ef488d55611d823a35eb1655f1de7a}\label{class_point_a56ef488d55611d823a35eb1655f1de7a} 
 \index{Point@{Point}!GetX@{GetX}}
 \index{GetX@{GetX}!Point@{Point}}
 \doxysubsubsection{\texorpdfstring{GetX()}{GetX()}}
 {\footnotesize\ttfamily int Point\+::\+GetX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Getter for x directory. 
+
+\begin{DoxyReturn}{Returns}
+index x
+\end{DoxyReturn}
 \Hypertarget{class_point_aa42c18de4df078af493363a423fd9580}\label{class_point_aa42c18de4df078af493363a423fd9580} 
 \index{Point@{Point}!GetY@{GetY}}
 \index{GetY@{GetY}!Point@{Point}}
 \doxysubsubsection{\texorpdfstring{GetY()}{GetY()}}
 {\footnotesize\ttfamily int Point\+::\+GetY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Getter for y directory. 
+
+\begin{DoxyReturn}{Returns}
+index y
+\end{DoxyReturn}
 \Hypertarget{class_point_a64bbaf11d4123bed35b7bb4b49d4995a}\label{class_point_a64bbaf11d4123bed35b7bb4b49d4995a} 
 \index{Point@{Point}!PrintLevel@{PrintLevel}}
 \index{PrintLevel@{PrintLevel}!Point@{Point}}
 \doxysubsubsection{\texorpdfstring{PrintLevel()}{PrintLevel()}}
 {\footnotesize\ttfamily char Point\+::\+Print\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Getter for level with real char value from map. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
 \Hypertarget{class_point_ad9ba2369f6a47ecad6c7d06c9385698a}\label{class_point_ad9ba2369f6a47ecad6c7d06c9385698a} 
 \index{Point@{Point}!SetDistance@{SetDistance}}
 \index{SetDistance@{SetDistance}!Point@{Point}}
 \doxysubsubsection{\texorpdfstring{SetDistance()}{SetDistance()}}
 {\footnotesize\ttfamily void Point\+::\+Set\+Distance (\begin{DoxyParamCaption}\item[{int}]{distance }\end{DoxyParamCaption})}
 
+
+
+Setter for distance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em distance} & \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

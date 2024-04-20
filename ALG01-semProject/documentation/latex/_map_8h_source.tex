@@ -7,28 +7,28 @@
 \DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
 \DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
 \DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <fstream>}}
-\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_map}{Map}}}
-\DoxyCodeLine{00008\ \{}
-\DoxyCodeLine{00009\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00010\ \ \ \ \ std::vector<Point*>\ mapArray;}
-\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{class_point}{Point}}*\ start\ =\ \textcolor{keyword}{nullptr};}
-\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{class_point}{Point}}*\ finish\ =\ \textcolor{keyword}{nullptr};}
-\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{int}\ rows;}
-\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{int}\ cols;}
-\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_point}{Point}}*\ ProcessPoint(\mbox{\hyperlink{class_point}{Point}}*\ actual,\ \mbox{\hyperlink{class_point}{Point}}*\ next);}
-\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_map_ae7932f2b314d517953d4b12718bc12a0}{Map}}(\textcolor{keywordtype}{int}\ rows,\ \textcolor{keywordtype}{int}\ cols);}
-\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_map_aa403fbe09394ccf39747588f5168e3b2}{\string~Map}}();}
-\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_point}{Point}}*\ \mbox{\hyperlink{class_map_aadb371347a78dffabe1c2a4edac6c1d0}{GetStart}}();}
-\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_point}{Point}}*\ \mbox{\hyperlink{class_map_ade2845dd03702abbc43df09e50ddde48}{GetFinish}}();}
-\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_map_a740473c4245408d61bc78a8b1245082a}{AddPoint}}(\mbox{\hyperlink{class_point}{Point}}*\ point);}
-\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_point}{Point}}*\ \mbox{\hyperlink{class_map_ac20ec7e3faaa34982375374c3091bf2d}{GetPoint}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
-\DoxyCodeLine{00023\ \ \ \ \ std::string\ \mbox{\hyperlink{class_map_ab6dd9debf6456a498b4a78bb9196f69d}{PrintMap}}();}
-\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_map_a93e37c12ec79af79ae390cfd0bc0f8a5}{CalculatePath}}();}
-\DoxyCodeLine{00025\ \ \ \ \ std::vector<Point*>\ \mbox{\hyperlink{class_map_ae65e67fa799556c137ea7f0512034035}{GetPath}}();}
-\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_map}{Map}}*\ \mbox{\hyperlink{class_map_ac789a8026d001b026340daea932bf547}{LoadFromFile}}(\textcolor{keyword}{const}\ std::string\&\ filename);}
-\DoxyCodeLine{00027\ }
-\DoxyCodeLine{00028\ }
-\DoxyCodeLine{00029\ \};}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_map}{Map}}}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00013\ \ \ \ \ std::vector<Point*>\ mapArray;}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_point}{Point}}*\ start\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_point}{Point}}*\ finish\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{int}\ rows;}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{int}\ cols;}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_point}{Point}}*\ ProcessPoint(\mbox{\hyperlink{class_point}{Point}}*\ actual,\ \mbox{\hyperlink{class_point}{Point}}*\ next);}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_map_ae7932f2b314d517953d4b12718bc12a0}{Map}}(\textcolor{keywordtype}{int}\ rows,\ \textcolor{keywordtype}{int}\ cols);}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_map_aa403fbe09394ccf39747588f5168e3b2}{\string~Map}}();}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_point}{Point}}*\ \mbox{\hyperlink{class_map_aadb371347a78dffabe1c2a4edac6c1d0}{GetStart}}();}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_point}{Point}}*\ \mbox{\hyperlink{class_map_ade2845dd03702abbc43df09e50ddde48}{GetFinish}}();}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_map_a740473c4245408d61bc78a8b1245082a}{AddPoint}}(\mbox{\hyperlink{class_point}{Point}}*\ point);}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_point}{Point}}*\ \mbox{\hyperlink{class_map_ac20ec7e3faaa34982375374c3091bf2d}{GetPoint}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00026\ \ \ \ \ std::string\ \mbox{\hyperlink{class_map_ab6dd9debf6456a498b4a78bb9196f69d}{PrintMap}}();}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_map_a93e37c12ec79af79ae390cfd0bc0f8a5}{CalculatePath}}();}
+\DoxyCodeLine{00028\ \ \ \ \ std::vector<Point*>\ \mbox{\hyperlink{class_map_ae65e67fa799556c137ea7f0512034035}{GetPath}}();}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_map}{Map}}*\ \mbox{\hyperlink{class_map_ac789a8026d001b026340daea932bf547}{LoadFromFile}}(\textcolor{keyword}{const}\ std::string\&\ filename);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \};}
 
 \end{DoxyCode}

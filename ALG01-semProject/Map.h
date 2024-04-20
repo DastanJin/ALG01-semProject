@@ -4,6 +4,9 @@
 #include <vector>
 #include <iostream>
 #include <fstream>
+/// <summary>
+/// Map class used for load, store and return path find results
+/// </summary>
 class Map
 {
 private:

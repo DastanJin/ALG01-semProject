@@ -1,4 +1,8 @@
 #pragma once
+/// <summary>
+/// Point class which is composite for Map
+/// Point represents single place in map
+/// </summary>
 class Point
 {
 private:

@@ -2,35 +2,43 @@
 \hypertarget{class_map}{}\label{class_map}\index{Map@{Map}}
 
 
+\doxylink{class_map}{Map} class used for load, store and return path find results.  
+
+
+
+
 {\ttfamily \#include $<$Map.\+h$>$}
 
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_map_ae7932f2b314d517953d4b12718bc12a0}{Map}} (int rows, int cols)
-\item 
+\begin{DoxyCompactList}\small\item\em \doxylink{class_map}{Map} object constructor for specified size. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_map_aa403fbe09394ccf39747588f5168e3b2}{\texorpdfstring{$\sim$}{\string~}\+Map}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Destructor for deleting all objects in map object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_point}{Point}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_map_aadb371347a78dffabe1c2a4edac6c1d0}{Get\+Start}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Start point getter. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_point}{Point}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_map_ade2845dd03702abbc43df09e50ddde48}{Get\+Finish}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em End point getter. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_map_a740473c4245408d61bc78a8b1245082a}{Add\+Point}} (\mbox{\hyperlink{class_point}{Point}} \texorpdfstring{$\ast$}{*}point)
-\item 
+\begin{DoxyCompactList}\small\item\em Loads point into map. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_point}{Point}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_map_ac20ec7e3faaa34982375374c3091bf2d}{Get\+Point}} (int x, int y)
-\item 
+\begin{DoxyCompactList}\small\item\em Getting point from map. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_map_ab6dd9debf6456a498b4a78bb9196f69d}{Print\+Map}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Print actual state of \doxylink{class_map}{Map}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_map_a93e37c12ec79af79ae390cfd0bc0f8a5}{Calculate\+Path}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Calculating shortest path Implementation Breadth-\/first search for each neighbour Ends when reach end or check all points. \end{DoxyCompactList}\item 
 std\+::vector$<$ \mbox{\hyperlink{class_point}{Point}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_map_ae65e67fa799556c137ea7f0512034035}{Get\+Path}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Return results from calculated path. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 static \mbox{\hyperlink{class_map}{Map}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_map_ac789a8026d001b026340daea932bf547}{Load\+From\+File}} (const std\+::string \&filename)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Reading map version from file. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+\doxylink{class_map}{Map} class used for load, store and return path find results. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{class_map_ae7932f2b314d517953d4b12718bc12a0}\label{class_map_ae7932f2b314d517953d4b12718bc12a0} 
@@ -39,11 +47,26 @@ static \mbox{\hyperlink{class_map}{Map}} \texorpdfstring{$\ast$}{*} \mbox{\hyper
 \doxysubsubsection{\texorpdfstring{Map()}{Map()}}
 {\footnotesize\ttfamily Map\+::\+Map (\begin{DoxyParamCaption}\item[{int}]{rows,  }\item[{int}]{cols }\end{DoxyParamCaption})}
 
+
+
+\doxylink{class_map}{Map} object constructor for specified size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rows} & Row count\\
+\hline
+{\em cols} & Column count\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_map_aa403fbe09394ccf39747588f5168e3b2}\label{class_map_aa403fbe09394ccf39747588f5168e3b2} 
 \index{Map@{Map}!````~Map@{\texorpdfstring{$\sim$}{\string~}Map}}
 \index{````~Map@{\texorpdfstring{$\sim$}{\string~}Map}!Map@{Map}}
 \doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Map()}{\string~Map()}}
 {\footnotesize\ttfamily Map\+::\texorpdfstring{$\sim$}{\string~}\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for deleting all objects in map object. 
 
 
 
@@ -54,11 +77,24 @@ static \mbox{\hyperlink{class_map}{Map}} \texorpdfstring{$\ast$}{*} \mbox{\hyper
 \doxysubsubsection{\texorpdfstring{AddPoint()}{AddPoint()}}
 {\footnotesize\ttfamily void Map\+::\+Add\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_point}{Point}} \texorpdfstring{$\ast$}{*}}]{point }\end{DoxyParamCaption})}
 
+
+
+Loads point into map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & point to be added\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_map_a93e37c12ec79af79ae390cfd0bc0f8a5}\label{class_map_a93e37c12ec79af79ae390cfd0bc0f8a5} 
 \index{Map@{Map}!CalculatePath@{CalculatePath}}
 \index{CalculatePath@{CalculatePath}!Map@{Map}}
 \doxysubsubsection{\texorpdfstring{CalculatePath()}{CalculatePath()}}
 {\footnotesize\ttfamily void Map\+::\+Calculate\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calculating shortest path Implementation Breadth-\/first search for each neighbour Ends when reach end or check all points. 
 
 \Hypertarget{class_map_ade2845dd03702abbc43df09e50ddde48}\label{class_map_ade2845dd03702abbc43df09e50ddde48} 
 \index{Map@{Map}!GetFinish@{GetFinish}}
@@ -66,36 +102,90 @@ static \mbox{\hyperlink{class_map}{Map}} \texorpdfstring{$\ast$}{*} \mbox{\hyper
 \doxysubsubsection{\texorpdfstring{GetFinish()}{GetFinish()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} \texorpdfstring{$\ast$}{*} Map\+::\+Get\+Finish (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+End point getter. 
+
+\begin{DoxyReturn}{Returns}
+finish point
+\end{DoxyReturn}
 \Hypertarget{class_map_ae65e67fa799556c137ea7f0512034035}\label{class_map_ae65e67fa799556c137ea7f0512034035} 
 \index{Map@{Map}!GetPath@{GetPath}}
 \index{GetPath@{GetPath}!Map@{Map}}
 \doxysubsubsection{\texorpdfstring{GetPath()}{GetPath()}}
 {\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_point}{Point}} \texorpdfstring{$\ast$}{*} $>$ Map\+::\+Get\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Return results from calculated path. 
+
+\begin{DoxyReturn}{Returns}
+array of Points from start to end
+\end{DoxyReturn}
 \Hypertarget{class_map_ac20ec7e3faaa34982375374c3091bf2d}\label{class_map_ac20ec7e3faaa34982375374c3091bf2d} 
 \index{Map@{Map}!GetPoint@{GetPoint}}
 \index{GetPoint@{GetPoint}!Map@{Map}}
 \doxysubsubsection{\texorpdfstring{GetPoint()}{GetPoint()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} \texorpdfstring{$\ast$}{*} Map\+::\+Get\+Point (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
 
+
+
+Getting point from map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & column index in map\\
+\hline
+{\em y} & row index in map\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+selected point from map
+\end{DoxyReturn}
 \Hypertarget{class_map_aadb371347a78dffabe1c2a4edac6c1d0}\label{class_map_aadb371347a78dffabe1c2a4edac6c1d0} 
 \index{Map@{Map}!GetStart@{GetStart}}
 \index{GetStart@{GetStart}!Map@{Map}}
 \doxysubsubsection{\texorpdfstring{GetStart()}{GetStart()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_point}{Point}} \texorpdfstring{$\ast$}{*} Map\+::\+Get\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Start point getter. 
+
+\begin{DoxyReturn}{Returns}
+start point
+\end{DoxyReturn}
 \Hypertarget{class_map_ac789a8026d001b026340daea932bf547}\label{class_map_ac789a8026d001b026340daea932bf547} 
 \index{Map@{Map}!LoadFromFile@{LoadFromFile}}
 \index{LoadFromFile@{LoadFromFile}!Map@{Map}}
 \doxysubsubsection{\texorpdfstring{LoadFromFile()}{LoadFromFile()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_map}{Map}} \texorpdfstring{$\ast$}{*} Map\+::\+Load\+From\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+Reading map version from file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & path to file with map input\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new \doxylink{class_map}{Map} generated from text
+\end{DoxyReturn}
 \Hypertarget{class_map_ab6dd9debf6456a498b4a78bb9196f69d}\label{class_map_ab6dd9debf6456a498b4a78bb9196f69d} 
 \index{Map@{Map}!PrintMap@{PrintMap}}
 \index{PrintMap@{PrintMap}!Map@{Map}}
 \doxysubsubsection{\texorpdfstring{PrintMap()}{PrintMap()}}
 {\footnotesize\ttfamily std\+::string Map\+::\+Print\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Print actual state of \doxylink{class_map}{Map}. 
+
+\begin{DoxyReturn}{Returns}
+console printable string
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

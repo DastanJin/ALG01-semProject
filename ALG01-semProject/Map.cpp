@@ -1,12 +1,19 @@
 #include "Map.h"
 #include <iostream>
 #include <queue>
-
+/// <summary>
+/// Map object constructor for specified size
+/// </summary>
+/// <param name="rows">Row count</param>
+/// <param name="cols">Column count</param>
 Map::Map(int rows, int cols) : rows(rows), cols(cols)
 {
   this->mapArray = std::vector<Point*>();
 }
 
+/// <summary>
+/// Destructor for deleting all objects in map object
+/// </summary>
 Map::~Map()
 {
   for (int i = 0; i < this->rows * this->cols; i++)
@@ -20,16 +27,28 @@ Map::~Map()
   }
 }
 
+/// <summary>
+/// Start point getter
+/// </summary>
+/// <returns>start point</returns>
 Point* Map::GetStart()
 {
   return this->start;
 }
 
+/// <summary>
+/// End point getter
+/// </summary>
+/// <returns>finish point</returns>
 Point* Map::GetFinish()
 {
   return this->finish;
 }
 
+/// <summary>
+/// Loads point into map
+/// </summary>
+/// <param name="point">point to be added</param>
 void Map::AddPoint(Point* point)
 {
   if (point->PrintLevel() == 'S')
@@ -42,7 +61,12 @@ void Map::AddPoint(Point* point)
   }
   mapArray.push_back(point);
 }
-
+/// <summary>
+/// Getting point from map
+/// </summary>
+/// <param name="x">column index in map</param>
+/// <param name="y">row index in map</param>
+/// <returns>selected point from map</returns>
 Point* Map::GetPoint(int x, int y)
 {
   if (x * y > mapArray.size() || x >= cols || y >= rows || x < 0 || y < 0)
@@ -52,6 +76,11 @@ Point* Map::GetPoint(int x, int y)
   return mapArray[x + (y * cols)];
 }
 
+
+/// <summary>
+/// Print actual state of Map
+/// </summary>
+/// <returns>console printable string</returns>
 std::string Map::PrintMap()
 {
   std::string mapString;
@@ -70,6 +99,13 @@ std::string Map::PrintMap()
   }
   return mapString;
 }
+
+/// <summary>
+/// Processing two neighbour points
+/// </summary>
+/// <param name="actual">actually used point</param>
+/// <param name="next">potentially accessable point</param>
+/// <returns>next point to process only if it is not already processed</returns>
 Point* Map::ProcessPoint(Point* actual, Point* next) {
   if (next != nullptr && next->GetDistance() == 2147483647 && (next->GetLevel() == actual->GetLevel() || next->GetLevel() == (actual->GetLevel() + 1)))
   {
@@ -79,7 +115,11 @@ Point* Map::ProcessPoint(Point* actual, Point* next) {
   }
   return nullptr;
 }
-
+/// <summary>
+/// Calculating shortest path
+/// Implementation Breadth-first search for each neighbour
+/// Ends when reach end or check all points
+/// </summary>
 void Map::CalculatePath() {
   start->SetDistance(0);
   std::queue<Point*> queue;
@@ -128,7 +168,10 @@ void Map::CalculatePath() {
     queue.pop();
   }
 }
-
+/// <summary>
+/// Return results from calculated path
+/// </summary>
+/// <returns>array of Points from start to end</returns>
 std::vector<Point*> Map::GetPath() {
   std::vector<Point*> result;
   if (finish->GetPrevious() == nullptr)
@@ -143,7 +186,11 @@ std::vector<Point*> Map::GetPath() {
   std::reverse(result.begin(), result.end());
   return result;
 }
-
+/// <summary>
+/// Reading map version from file
+/// </summary>
+/// <param name="filename">path to file with map input</param>
+/// <returns>new Map generated from text</returns>
 Map* Map::LoadFromFile(const std::string& filename) {
   std::ifstream file(filename);
 
